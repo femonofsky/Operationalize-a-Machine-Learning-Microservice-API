@@ -6,10 +6,14 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
+dockerpath=nofsky/app_flask
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
+docker login --username nofsky
+docker image tag app_flask $dockerpath
 
 # Step 3:
 # Push image to a docker repository
+docker push $dockerpath
