@@ -8,7 +8,7 @@
 # dockerpath=<your docker ID/path>
 dockerpath=nofsky/app_flask
 
-# Step 2:  
+# Step 2:
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
 docker login --username nofsky
