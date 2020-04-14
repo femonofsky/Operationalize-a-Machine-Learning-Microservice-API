@@ -10,7 +10,7 @@ dockerpath=nofsky/app_flask
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run app_flask --image=$dockerpath --port=80
+kubectl run app-flask --image=$dockerpath --port=80
 
 
 # Step 3:
@@ -20,6 +20,6 @@ kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-kubectl port-forward deployment/app_flask 8000:80 
+kubectl port-forward deployment/app-flask 8000:80 
 
 
